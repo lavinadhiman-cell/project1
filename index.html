@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Glow Beauty Cosmetics</title>
+
+<style>
+
+
+/* RESET */
+.slider{
+width:100%;
+height:500px;
+overflow:hidden;
+position:relative;
+}
+
+.slides{
+display:flex;
+width:300%;
+transition:1s;
+}
+
+.slide{
+width:100%;
+flex-shrink:0;
+}
+
+.slide img{
+width:100%;
+height:500px;
+object-fit:cover;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#ff3f8e;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#ff3f8e;
+}
+
+/* HERO SECTION */
+
+
+
+.hero{
+height:90vh;
+background:url("https://images.unsplash.com/photo-1596462502278-27bfdc403348" ) center/cover;
+display:flex;
+align-items:center;
+padding-left:100px;
+color:white;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.hero-content button{
+padding:15px 40px;
+border:none;
+background:#ff3f8e;
+color:white;
+font-size:18px;
+cursor:pointer;
+border-radius:30px;
+transition:0.3s;
+}
+
+.hero-content button:hover{
+background:#e6006f;
+}
+
+/* FEATURE SECTION */
+
+.features{
+padding:80px;
+text-align:center;
+background:#fff0f6;
+}
+
+.features h2{
+font-size:36px;
+margin-bottom:50px;
+}
+
+.feature-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.feature{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.feature:hover{
+transform:translateY(-10px);
+}
+
+.feature img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+/* PRODUCTS */
+
+.products{
+padding:80px;
+text-align:center;
+}
+
+.products h2{
+font-size:36px;
+margin-bottom:40px;
+}
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.product{
+background:white;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+padding:20px;
+transition:0.3s;
+}
+
+.product:hover{
+transform:scale(1.05);
+}
+
+.product img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.product h3{
+    text-align: ;
+margin-top:15px;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+button{
+    
+background:#ff2f6d;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:25px;
+
+}
+.product button:hover{
+background:#e6005c;
+}
+.product button{
+padding:10px 25px;
+border:none;
+background:#ff2f7a;
+color:white;
+cursor:pointer;
+border-radius:25px;
+transition:0.3s;
+display: block;
+margin: auto;
+font-weight: bold;
+}
+
+.products{
+padding:40px 80px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+text-align: center;
+}
+
+/* PRODUCT CARD */
+
+.product{
+background:white;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+padding:20px;
+text-align:center;
+transition:0.3s;
+}
+
+.product:hover{
+transform:scale(1.1);
+}
+
+.product img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+text-align: center;
+transition: 0.4s;
+}
+
+.product h3{
+     text-align:center ;
+margin-top:15px;
+}
+
+.price{
+color:#ff2f7a;
+font-weight:bold;
+margin:10px 0;
+text-align: center;
+}
+
+.product button{
+padding:10px 25px;
+border:none;
+background:#ff2f7a;
+color:white;
+cursor:pointer;
+border-radius:25px;
+transition:0.3s;
+display: block;
+margin: auto;
+font-weight: bold;
+}
+
+.product button:hover{
+background:#e6005c;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+<header>
+
+<div class="logo">GlowBeauty</div>
+
+<nav>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Products</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+<body>
+
+
+
+<div class="slider">
+
+<div class="slide active">
+<img src="https://media6.ppl-media.com/mediafiles/blogs/shutterstock_1717814998_2adffb2fe5.jpg" height="200p" width="200px">
+</div>
+
+<div class="slide">
+<img src="https://media.gettyimages.com/id/1461330379/photo/set-of-beauty-products-laid-out-on-a-multi-color-background-cosmetic-make-up-products-for-a.jpg?s=612x612&w=gi&k=20&c=Zptfr7QnSlTuSGq2CbtxqCBE0qiDU29lh371eehjAB0=" height="200px" width="200px">
+</div>
+
+<div class="slide">
+<img src="https://www.yesmadam.com/blog/wp-content/uploads/2021/09/unnamed-10-1.jpg" height="200px" width="200px">
+</div>
+
+</div>
+
+</body>
+
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Luxury Cosmetic Collection</h1>
+
+<p>Enhance your beauty with premium skincare & makeup products.</p>
+
+<button onclick="shopNow()">Shop Now</button>
+
+</div>
+
+</section>
+
+
+
+
+<div class="title">
+<h1>Our Cosmetic Products</h1>
+</div>
+
+
+<section class="products">
+
+<div class="product">
+<img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa">
+<h3>Luxury Lipstick</h3>
+<p class="price">Rs.99</p>
+<button onclick="cart()">Add to Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://images-cdn.ubuy.co.in/6809132bb49ee302cb05b3c1-maybelline-fit-me-matte-poreless.jpg">
+<h3>Face Foundation</h3>
+<p class="price">Rs.250</p>
+<button onclick="cart()">Add to Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://images.mamaearth.in/catalog/product/h/o/honey-malai-oil-free-face-moisturizer_1.jpg?format=auto&height=600">
+<h3>Moisturizing Cream</h3>
+<p class="price">Rs.199</p>
+<button onclick="cart()">Add to Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://skinsparkle.in/cdn/shop/files/69306229da93ee2551a9aa3a.jpg?v=1764778830">
+<h3>Skin Glow Serum</h3>
+<p class="price">Rs.150</p>
+<button onclick="cart()">Add to Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://vizaggrocers.com/1073-large_default/hul-ponds-white-beauty-spot-less-fairness-face-wash.jpg">
+<h3>Beauty Face Wash</h3>
+<p class="price">Rs.199</p>
+<button onclick="cart()">Add to Cart</button>
+</div>
+
+
+<div class="product">
+<img src="https://cdn.shopify.com/s/files/1/0089/0840/6869/files/compact_powders_in_different_shades.jpg?v=1738578827">
+<h3>Compact Powder</h3>
+<p class="price">Rs.149</p>
+<button onclick="cart()">Add to Cart</button>
+</div>
+<div class="product">
+    <img src="https://nourishmantra.in/cdn/shop/files/Artboard9.jpg?v=1737442069&width=4096" height="200px" width="200px">
+    <h3>Eyeliner</h3>
+    <p class="price">Rs.99</p>
+    <button onclick="cart()">Add to cart</button>
+
+</div>
+<div class="product">
+    <img src="https://glam21.in/cdn/shop/products/FP3001.jpg?v=1754896359&width=1500" height="200px" width="200px">
+    <h3>Primer</h3>
+    <p class="price">Rs.299</p>
+    <button onclick="cart()">Add to cart</button>
+
+</div>
+<div class="product">
+    <img src="https://assets.myntassets.com/assets/images/7638906/2025/4/28/ea55f565-9fea-49f6-8738-f62e90464dca1745835058210-Maybelline-New-York-Instant-Age-Rewind-Concealer---Light-6-m-1.jpg" height="200px" width="200px">
+    <h3>concealer</h3>
+    <p class="price">Rs.499</p>
+    <button onclick="cart()">Add to cart</button>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 GlowBeauty Cosmetics | All Rights Reserved</p>
+
+</footer>
+<script>
+
+function cart(){
+
+alert("Product added to cart!");
+
+}
+
+</script>
+
+<script>
+
+function addtocart(){
+    alert("your product has been added");
+}
+
+
+function shopNow(){
+
+alert("Welcome to GlowBeauty Cosmetics!");
+
+}
+  
+
+  
+
+let index=0;
+let slides=document.querySelector(".slides");
+
+function slider(){
+
+index++;
+
+if(index>2){
+index=0;
+}
+
+slides.style.transform="translateX(-"+index*100+"%)";
+
+}
+
+setInterval(slider,3000);
+
+
+</script>
+
+
+
+</body>
+</html>
